@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+   
+}
+.header{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background: #232F3E;
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+}
+.d1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 20px auto;
+  align-items: center;
+}
+.d1 img{
+  margin-bottom: 20px;
+}
+#comprar{
+  height: 48px;
+  width: 90%;
+  border: 0px;
+  color: #1a1a1a;
+  background: #FF9F00;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 3.5%;
+}
+.seguro{
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 5px;
+ 
+}
+.container{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.315);
+ 
+}
+.menu-header h2{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 20px;
+}
+i{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+}
+.menu-header{
+  height: 128px;
+  background: #232F3E;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
+}
+.menu-header .cuenta{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0%; 
+    position: fixed;/* Stay in place */
+    z-index: ; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255); /* Black fallback color */
+    background-color: rgba(255, 255, 255); /* Black w/opacity */
+    overflow: hidden;/* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    font-size: 19px;
+    position: relative;
+     /* 25% from the top */
+    width: 100%; /* 100% width */
+     /* Centered text/links */
+     /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  hr{
+    height: 5px;
+    width: 100%;
+    border: 3px solid rgb(211, 211, 211);
+  }
+  .text-laterar{
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .overlay-content div{
+    padding: 13px 20px;
+    color: black;
+  }
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 20px 18px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: #1a1a1a;
+    display: block; /* Display block instead of inline */
+     /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #721d1d;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    padding: 15px 15px;
+    border-radius: 50px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
